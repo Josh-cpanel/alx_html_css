@@ -32,3 +32,42 @@ header, footer {
     padding: 10px;
     text-align: center;
 }
+/* Custom styles - styles.css */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #004080;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .logo {
+  font-size: 2rem;  /* make logo larger */
+  color: gold;      /* logo color */
+  margin-right: 20px;
+}
+
+article {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+aside {
+  background-color: #f0f0f8;
+  border-left: 3px solid #ccc;
+}
+
+footer {
+  background-color: #004080;
+  color: #fff;
+}
