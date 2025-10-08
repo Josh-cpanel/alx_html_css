@@ -1,0 +1,2 @@
+the html file is a copy and paste structure of a website wer are to style with css.
+This is alx's project for css advanced learning that's to help learners get themselves familiar with with using css to style a website.
