@@ -1,0 +1,282 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #001133),
+              url('Images/HeroImage.png') center/cover no-repeat;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navigation bar */
+nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+}
+
+nav .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+nav .logo span {
+  margin-left: 8px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #a066ff;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+/* Register button */
+.hero .btn {
+  background-color: #a066ff;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #8b4cff;
+}
+
+/* Learn section */
+.learn {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.learn h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.learn h2 span {
+  color: #a066ff;
+  font-weight: 600;
+}
+
+/* Profiles */
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 15px;
+}
+
+.profile h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.profile p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 5px;
+}
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url("images/about-bg.jpg") center/cover no-repeat;
+    height: 90vh; /* or adjust based on how tall you want it */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+.about-content {
+    max-width: 500px;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.about-hero .btn {
+    background-color: #c96fff;
+}
+/* ===========================
+   RESPONSIVE DESIGN SECTION
+   =========================== */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .tags {
+    gap: 15px;
+  }
+
+  .profiles {
+    gap: 30px;
+  }
+
+  .profile img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .navbar {
+    padding: 20px 40px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  /* Stack navbar items */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Adjust hero section */
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .tags {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Adjust learn and profiles */
+  .learn-text {
+    font-size: 1rem;
+    margin-top: 60px;
+  }
+
+  .profiles {
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .profile img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile h3 {
+    font-size: 0.9rem;
+  }
+
+  .profile p {
+    font-size: 0.8rem;
+  }
+
+  /* Responsive second hero (about section) */
+  .about-hero {
+    height: 60vh;
+    padding: 20px;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+}
+
+/* For very small screens (phones under 480px) */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+}
