@@ -169,6 +169,69 @@ nav ul li a:hover {
     background-color: #c96fff;
 }
 /* ===========================
+   TESTIMONIAL SECTION
+   =========================== */
+.testimonial {
+    background-color: #b26eff; /* the purple background */
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.testimonial-content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.testimonial-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.testimonial-text .quote {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.person-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.person-title {
+    font-style: italic;
+    color: #f0f0f0;
+    font-size: 0.9rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .testimonial-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-content img {
+        margin-bottom: 15px;
+    }
+}
+
+/* ===========================
    RESPONSIVE DESIGN SECTION
    =========================== */
 
